@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equipo - 3 integrantes</title>
+  <meta name="description" content="Página del equipo: información personal y contacto de 3 integrantes." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#7c3aed}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071029 0%, #07203a 100%);color:#e6eef8}
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    header h1{font-size:28px;margin:0}
+    header p{color:var(--muted);margin:4px 0 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .avatar{width:100%;height:200px;border-radius:10px;object-fit:cover;background:#0b1220}
+    .name{font-size:18px;margin:12px 0 2px}
+    .role{color:var(--accent);font-weight:600;margin-bottom:8px}
+    .bio{color:var(--muted);font-size:14px;line-height:1.4;margin-bottom:12px}
+    .info{display:flex;flex-wrap:wrap;gap:10px}
+    .pill{background:rgba(255,255,255,0.02);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+    .social{display:flex;gap:8px;margin-top:12px}
+    .social a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.03)}
+    footer{color:var(--muted);text-align:center;margin-top:26px;font-size:14px}
+    /* small utilities */
+    .center{text-align:center}
+    /* responsive tweaks */
+    @media (max-width:520px){header{flex-direction:column;align-items:flex-start} .avatar{height:170px}}
+    /* --- small comment for you: replace placeholders between {{ }} with real data --- */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Equipo Creativo</h1>
+        <p>Conoce a las 3 integrantes del equipo</p>
+      </div>
+      <div class="center">
+        <small class="pill">INFORMACION PEROSNAL DEL EQUIPO</small>
+      </div>
+    </header>
+
+    <main class="grid">
+
+      <!-- Tarjeta 1 -->
+      <article class="card">
+      <!--<img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Foto de {{Nombre 1}}" /> -->
+        <div class="name"> Valeria Yoselin Beltran Gallegos </div>
+        <div class="role">Estudiante</div>
+        <div class="bio">Estudiante de programacion, le gusta interactuar con las personas</div>
+        <div class="info">
+          <div class="pill">Edad: Edad 17</div>
+          <div class="pill">Ciudad: Aguacalientes</div>
+          <div class="pill">Tel: 449 900 0853</div>
+        </div>
+        <div class="social">
+          
+          <a href="https://www.instagram.com/liz_gmzzz?igsh=aHp0bGFobGQ2ZHNh" target="_blank" title="Instagram">IG</a>
+          <a href="mailto:{{Email 1}}" title="Email">✉</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2 -->
+      <article class="card">
+        <!--<img class="avatar" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Foto de {{Nombre 2}}" /> -->
+        <div class="name">Lizeth Gomez Gonzalez</div>
+        <div class="role">Estudiante</div>
+        <div class="bio">Estudiante de programacion, le gusta salir con amigos </div>
+        <div class="info">
+          <div class="pill">Edad: Edad 17</div>
+          <div class="pill">Ciudad: Aguasaclientes</div>
+          <div class="pill">Tel: 449 456 7845</div>
+        </div>
+        <div class="social">
+          
+          <a href="https://www.instagram.com/__vaalglz?igsh=bjgzN2xlbW9mNmg3" target="_blank" title="Instagram">IG</a>
+          <a href="mailto:liz.gmz.gon@gmail.com" title="Email">✉</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 3 -->
+      <article class="card">
+        <!--<img class="avatar" src="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=800&auto=format&fit=crop&crop=faces" alt="Foto de {{Nombre 3}}" /> -->
+        <div class="name">Camila Pamela Mendoza Villanueva</div>
+        <div class="role">Estudiante</div>
+        <div class="bio">Estudiante de programacion, le gusta pasar tiempo con su familia</div>
+        <div class="info">
+          <div class="pill">Edad: Edad 16</div>
+          <div class="pill">Ciudad: Aguascalientes</div>
+          <div class="pill">Tel: 449 031 0224</div>
+        </div>
+        <div class="social">
+          <a href="https://www.instagram.com/cami.mdzv?igsh=cTVsOHV3dGx3dW56" target="_blank" title="Instagram">IG</a>
+          <a href="mailto:{{Email 3}}" title="Email">✉</a>
+        </div>
+      </article>
+
+
+    </main>
+
+    <footer>
+      <div>© 2025 — Equipo Creativo. Diseño simple y fácil de editar.</div>
+      
+    </footer>
+  </div>
+
+  <!-- Pequeño script que sugeriría mejoras (opcional) -->
+  <script>
+    // Si quieres cambiar las fotos a locales, reemplaza la URL de <img src="..."> por "images/nombre.jpg"
+    // Si necesitas que cree una versión en PDF o te suba la página, dime y te explico paso a paso.
+    console.log('Página del equipo lista — reemplaza los {{...}} con la información real.');
+  </script>
+</body>
+</html>
